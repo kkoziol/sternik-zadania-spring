@@ -27,6 +27,13 @@ public class BeanConfigurator {
     @Bean
     @Lazy
     public MyThirdBean mySkomplikowany() {
-        return new MyThirdBean("skomplikowany");
+        MyThirdBean thirdBean = new MyThirdBean("skomplikowany");
+        thirdBean.setBean(getMyFirst());
+        return thirdBean;
+    }
+
+    @Bean
+    public MyFirstBean getMyFirst(){
+        return new MyFirstBean("ale pierwszy");
     }
 }
