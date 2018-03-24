@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
-import pl.sternik.kk.zadania.spring.zad05.DrugieDao;
+//import pl.sternik.kk.zadania.spring.zad05.DrugieDao;
 
 
 public class KlaserServiceImpl {
