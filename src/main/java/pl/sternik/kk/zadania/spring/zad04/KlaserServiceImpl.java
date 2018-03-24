@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.annotation.Resource;
+import javax.inject.Inject;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -19,6 +20,7 @@ public class KlaserServiceImpl {
 	@Autowired
 //	@DrugieDao
 	@Qualifier("druga")
+//	@Inject
 	private MonetaDao monetaDao;
 
 	public KlaserServiceImpl() {
