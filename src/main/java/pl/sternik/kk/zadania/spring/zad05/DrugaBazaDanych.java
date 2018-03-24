@@ -12,10 +12,12 @@ import pl.sternik.kk.zadania.spring.zad04.Moneta;
 import pl.sternik.kk.zadania.spring.zad04.MonetaDao;
 import pl.sternik.kk.zadania.spring.zad04.NoSuchMonetaException;
 import pl.sternik.kk.zadania.spring.zad04.Status;
+import pl.sternik.kk.zadania.spring.zad06.DrugieDao;
 
 
 @Repository
-@Qualifier("druga")
+//@Qualifier("druga")
+@DrugieDao
 public class DrugaBazaDanych implements MonetaDao {
 
 	private List<Moneta> baza;
