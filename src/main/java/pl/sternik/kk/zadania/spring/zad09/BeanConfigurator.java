@@ -8,18 +8,25 @@ import pl.sternik.kk.zadania.spring.zad01.MyFirstBean;
 import pl.sternik.kk.zadania.spring.zad02.MySecondBean;
 import pl.sternik.kk.zadania.spring.zad03.MyThirdBean;
 
+@Configuration
 public class BeanConfigurator {
 
-	public MySecondBean myDrugi() {
-		return new MySecondBean();
-	}
+    @Bean
+    @Lazy
+    public MySecondBean myDrugi() {
+        return new MySecondBean();
+    }
 
-	public MySecondBean myDrugiNazwany() {
-		MySecondBean t = new MySecondBean();
-		t.setName("Tralal ala");
-		return t;
-	}
-	public MyThirdBean mySkomplikowany() {
+    @Bean
+    @Lazy
+    public MySecondBean myDrugiNazwany() {
+        MySecondBean t = new MySecondBean();
+        t.setName("Tralal ala");
+        return t;
+    }
+    @Bean
+    @Lazy
+    public MyThirdBean mySkomplikowany() {
         return new MyThirdBean("skomplikowany");
-	}
+    }
 }
