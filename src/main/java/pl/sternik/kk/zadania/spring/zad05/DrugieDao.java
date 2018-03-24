@@ -7,6 +7,9 @@ import java.lang.annotation.Target;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 
+//@Retention(RetentionPolicy.RUNTIME)
+//@Target({ElementType.TYPE,ElementType.FIELD})
+//@Qualifier
 public @interface DrugieDao {
 
 }

@@ -15,10 +15,10 @@ import org.springframework.stereotype.Service;
 @Service
 public class KlaserServiceImpl {
 
-	@Resource(name="prostaBazaDanych")
-//	@Autowired
+//	@Resource(name="prostaBazaDanych")
+	@Autowired
 //	@DrugieDao
-//	@Qualifier("druga")
+	@Qualifier("druga")
 	private MonetaDao monetaDao;
 
 	public KlaserServiceImpl() {
