@@ -9,8 +9,11 @@ import org.springframework.stereotype.Component;
 
 import pl.sternik.kk.zadania.spring.zad01.MyFirstBean;
 
+@Component
+@Lazy
 public class LifeBean {
 
+	@Autowired
 	private MyFirstBean firstBean;
 
 	public LifeBean() {
@@ -21,11 +24,13 @@ public class LifeBean {
 		}
 	}
 
+	@PostConstruct
 	public void setup() {
 		System.out.println("po konstrukcji!");
 		System.out.println("Teraz jest.." + firstBean.getName());
 	}
 
+	@PreDestroy
 	public void clean() {
 		System.out.println("sprzątam!");
 	}

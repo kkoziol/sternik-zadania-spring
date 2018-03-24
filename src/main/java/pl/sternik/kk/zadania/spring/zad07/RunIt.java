@@ -8,7 +8,7 @@ public class RunIt
 	public static void main( String[] args )
     {
     	ConfigurableApplicationContext ctx = new ClassPathXmlApplicationContext("beans.xml");
-//        LifeBean lb = ctx.getBean(LifeBean.class);
+        LifeBean lb = ctx.getBean(LifeBean.class);
         ctx.close();
     }
 }
